@@ -2,29 +2,32 @@ import requests
 
 def http_options(url):
     response = requests.options(url)
-    print("\nOPTIONS Request:")
-    print("Status Code:", response.status_code)
-    print("Response Headers:", response.headers)
-    print("Response Body:", response.text)
+    with open("options.txt", "w") as f:
+        f.write("\nOPTIONS Request:")
+        f.write("Status Code: " + str(response.status_code))
+        f.write("Response Headers: " + str(response.headers))
+        f.write("Response Body: " + str(response.text))
 
 def http_get(url):
     response = requests.get(url)
-    print("\nGET Request:")
-    print("Request URL:", response.url)
-    print("Request Method: GET")
-    print("Status Code:", response.status_code)
-    print("Response Headers:", response.headers)
-    print("Response Body:", response.text)
+    with open("get.txt", "w") as f:
+        f.write("\nGET Request:")
+        f.write("Request URL: " + str(url))
+        f.write("Request Method: GET")
+        f.write("Status Code: " + str(response.status_code))
+        f.write("Response Headers: " + str(response.headers))
+        f.write("Response Body: " + str(response.text))
 
 def http_post(url, data):
     response = requests.post(url, data=data)
-    print("\nPOST Request:")
-    print("Request URL:", response.url)
-    print("Request Method: POST")
-    print("Request Data:", data)
-    print("Status Code:", response.status_code)
-    print("Response Headers:", response.headers)
-    print("Response Body:", response.text)
+    with open("post.txt", "w") as f:
+        f.write("\nPOST Request:")
+        f.write("Request URL: " + str(url))
+        f.write("Request Method: POST")
+        f.write("Request Data: " + str(data))
+        f.write("Status Code: " + str(response.status_code))
+        f.write("Response Headers: " + str(response.headers))
+        f.write("Response Body: " + str(response.text))
 
 if __name__ == "__main__":
     url = "https://httpbin.org"  # Можно заменить на нужный тебе URL
