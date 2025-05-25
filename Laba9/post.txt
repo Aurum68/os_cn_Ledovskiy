@@ -1,0 +1,22 @@
+
+POST Request:Request URL: https://httpbin.org/postRequest Method: POSTRequest Data: {'key1': 'value1', 'key2': 'value2'}Status Code: 200Response Headers: {'Date': 'Sun, 25 May 2025 10:51:38 GMT', 'Content-Type': 'application/json', 'Content-Length': '504', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Credentials': 'true'}Response Body: {
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "key1": "value1", 
+    "key2": "value2"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Content-Length": "23", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "User-Agent": "python-requests/2.32.3", 
+    "X-Amzn-Trace-Id": "Root=1-6832f63a-11424c5b0b122280794ad5f2"
+  }, 
+  "json": null, 
+  "origin": "95.52.218.22", 
+  "url": "https://httpbin.org/post"
+}

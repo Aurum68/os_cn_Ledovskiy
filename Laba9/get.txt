@@ -1,0 +1,13 @@
+
+GET Request:Request URL: https://httpbin.org/getRequest Method: GETStatus Code: 200Response Headers: {'Date': 'Sun, 25 May 2025 10:51:37 GMT', 'Content-Type': 'application/json', 'Content-Length': '306', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Credentials': 'true'}Response Body: {
+  "args": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Host": "httpbin.org", 
+    "User-Agent": "python-requests/2.32.3", 
+    "X-Amzn-Trace-Id": "Root=1-6832f639-3d76f2c445d24d0f1abcf654"
+  }, 
+  "origin": "95.52.218.22", 
+  "url": "https://httpbin.org/get"
+}
